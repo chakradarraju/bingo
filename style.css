@@ -1,0 +1,50 @@
+.cell {
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+	border-radius: 50%;
+}
+
+#bingo {
+  display: table;
+  margin: 20px auto;
+}
+
+.bingo {
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.bingo.done {
+  background-color: blue;
+}
+
+.cell.selected {
+	background-color: lightgreen;
+}
+
+.cell.selected:hover {
+	background-color: lightseagreen;
+}
+
+.cell:hover {
+	background-color: lightyellow;
+}
+
+#content {
+	text-align: center;
+}
+
+.board {
+	display: table;
+	margin: 20px auto;
+}
+
+.board.hidden {
+  display: none;
+}
