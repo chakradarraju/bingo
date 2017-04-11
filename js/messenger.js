@@ -1,4 +1,4 @@
-define(["peer", "id"], function(peer, idConsts) {
+define([], function() {
   var domain = '@chakradarraju.onsip.com';
 
   function Messenger(id, otherid) {
