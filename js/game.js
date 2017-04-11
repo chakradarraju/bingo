@@ -83,7 +83,7 @@ define(["messenger", "domcontroller"], function(Messenger, DomController) {
       if (full) count++;
     }
     this.domController_.bingo(count);
-    if (count > 4 && this.isMyTurn_) {
+    if (count > 4) {
       this.setGameOver_(true);
       this.sendGameOver_();
     }
