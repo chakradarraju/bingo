@@ -62,6 +62,7 @@ define(["messenger", "domcontroller"], function(Messenger, DomController) {
     console.assert(!this.selected_[val], 'Got select for already selected number.');
     this.select_(val);
     this.isMyTurn_ = true;
+    this.updateMessage_();
   };
 
   Game.prototype.select_ = function(val) {
@@ -69,7 +70,6 @@ define(["messenger", "domcontroller"], function(Messenger, DomController) {
     this.selected_[val] = true;
     this.domController_.setSelected(this.order_.indexOf(val), true);
     this.updateBingo_();
-    this.updateMessage_();
   };
 
   Game.prototype.updateBingo_ = function() {
