@@ -1,8 +1,8 @@
-define(["peer", "id"], function(peer, idConsts) {
+define(["peer"], function(peer) {
   function Messenger(id, otherid) {
     this.id_ = id;
     this.otherid_ = otherid;
-    this.peer_ = new Peer(id, {key: idConsts.PEERJS_API_KEY});
+    this.peer_ = new Peer(id);
     this.connection_ = null;
     this.callback_ = {};
     this.buffer_ = [];
