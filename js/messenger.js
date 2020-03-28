@@ -1,4 +1,4 @@
-define(["peer"], function(peer) {
+define(function() {
   function Messenger(id, otherid) {
     this.id_ = id;
     this.otherid_ = otherid;
