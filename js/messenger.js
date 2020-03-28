@@ -2,7 +2,7 @@ define(function() {
   function Messenger(id, otherid) {
     this.id_ = id;
     this.otherid_ = otherid;
-    this.peer_ = new Peer(id);
+    this.peer_ = new Peer(id, {secure: true});
     this.connection_ = null;
     this.callback_ = {};
     this.buffer_ = [];
